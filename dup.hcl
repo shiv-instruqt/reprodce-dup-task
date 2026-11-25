@@ -23,4 +23,11 @@ resource "task" "dup" {
   config {
     target = resource.container.c1
   }
+
+resource "task" "dup" {
+  description = "dup third definition"
+  config {
+    target = resource.container.c1
+  }
+}
 }
